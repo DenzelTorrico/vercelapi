@@ -1,0 +1,54 @@
+[2025-04-20T07:13:45.914Z] ERROR
+Error: datas is not defined
+Stack: ReferenceError: datas is not defined
+    at handler (webpack-internal:///(api-node)/./pages/api/inventory.js:65:17)
+    at apiResolver (C:\wamp64\www\nextjslogs\vercelapinextjs\node_modules\next\dist\compiled\next-server\pages-api.runtime.dev.js:41:4557)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PagesAPIRouteModule.render (C:\wamp64\www\nextjslogs\vercelapinextjs\node_modules\next\dist\compiled\next-server\pages-api.runtime.dev.js:41:6197)
+    at async DevServer.runApi (C:\wamp64\www\nextjslogs\vercelapinextjs\node_modules\next\dist\server\next-server.js:671:9)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\wamp64\www\nextjslogs\vercelapinextjs\node_modules\next\dist\server\next-server.js:302:37)
+    at async DevServer.handleRequestImpl (C:\wamp64\www\nextjslogs\vercelapinextjs\node_modules\next\dist\server\base-server.js:899:17)
+    at async C:\wamp64\www\nextjslogs\vercelapinextjs\node_modules\next\dist\server\dev\next-dev-server.js:371:20
+    at async Span.traceAsyncFn (C:\wamp64\www\nextjslogs\vercelapinextjs\node_modules\next\dist\trace\trace.js:157:20)
+    at async DevServer.handleRequest (C:\wamp64\www\nextjslogs\vercelapinextjs\node_modules\next\dist\server\dev\next-dev-server.js:368:24)
+    at async invokeRender (C:\wamp64\www\nextjslogs\vercelapinextjs\node_modules\next\dist\server\lib\router-server.js:237:21)
+    at async handleRequest (C:\wamp64\www\nextjslogs\vercelapinextjs\node_modules\next\dist\server\lib\router-server.js:428:24)
+    at async requestHandlerImpl (C:\wamp64\www\nextjslogs\vercelapinextjs\node_modules\next\dist\server\lib\router-server.js:452:13)
+    at async Server.requestListener (C:\wamp64\www\nextjslogs\vercelapinextjs\node_modules\next\dist\server\lib\start-server.js:158:13)
+Method: POST
+URL: /api/inventory
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+Token: Bearer 1234567890
+[2025-04-20T07:16:32.571Z] ERROR
+Error: datas is not defined
+Stack: ReferenceError: datas is not defined
+    at handler (webpack-internal:///(api-node)/./pages/api/inventory.js:65:17)
+    at apiResolver (C:\wamp64\www\nextjslogs\vercelapinextjs\node_modules\next\dist\compiled\next-server\pages-api.runtime.dev.js:41:4557)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async PagesAPIRouteModule.render (C:\wamp64\www\nextjslogs\vercelapinextjs\node_modules\next\dist\compiled\next-server\pages-api.runtime.dev.js:41:6197)
+    at async DevServer.runApi (C:\wamp64\www\nextjslogs\vercelapinextjs\node_modules\next\dist\server\next-server.js:671:9)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\wamp64\www\nextjslogs\vercelapinextjs\node_modules\next\dist\server\next-server.js:302:37)
+    at async DevServer.handleRequestImpl (C:\wamp64\www\nextjslogs\vercelapinextjs\node_modules\next\dist\server\base-server.js:899:17)
+    at async C:\wamp64\www\nextjslogs\vercelapinextjs\node_modules\next\dist\server\dev\next-dev-server.js:371:20
+    at async Span.traceAsyncFn (C:\wamp64\www\nextjslogs\vercelapinextjs\node_modules\next\dist\trace\trace.js:157:20)
+    at async DevServer.handleRequest (C:\wamp64\www\nextjslogs\vercelapinextjs\node_modules\next\dist\server\dev\next-dev-server.js:368:24)
+    at async invokeRender (C:\wamp64\www\nextjslogs\vercelapinextjs\node_modules\next\dist\server\lib\router-server.js:237:21)
+    at async handleRequest (C:\wamp64\www\nextjslogs\vercelapinextjs\node_modules\next\dist\server\lib\router-server.js:428:24)
+    at async requestHandlerImpl (C:\wamp64\www\nextjslogs\vercelapinextjs\node_modules\next\dist\server\lib\router-server.js:452:13)
+    at async Server.requestListener (C:\wamp64\www\nextjslogs\vercelapinextjs\node_modules\next\dist\server\lib\start-server.js:158:13)
+Method: POST
+URL: /api/inventory
+IP: ::1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
+Token: Bearer 1234567890
+IP Client: ::1
+Geo: {"range":[134744064,134744575],"country":"US","region":"","eu":"0","timezone":"America/Chicago","city":"","ll":[37.751,-97.822],"metro":0,"area":1000}
+UA: {"ua":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36","browser":{"name":"Chrome","version":"135.0.0.0","major":"135"},"cpu":{"architecture":"amd64"},"device":{},"engine":{"name":"Blink","version":"135.0.0.0"},"os":{"name":"Windows","version":"10"}}
+browser: Chrome 135.0.0.0
+engine: Blink 135.0.0.0
+os: Windows 10
+cpu: amd64
+device: undefined undefined
+type: undefined;
+
