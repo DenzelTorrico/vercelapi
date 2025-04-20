@@ -34,7 +34,7 @@ os: ${ua.os?.name} ${ua.os?.version}
 cpu: ${ua.cpu?.architecture}
 device: ${ua.device?.vendor} ${ua.device?.model}
 type: ${ua.device?.type}`;
-
+    console.log(log);
     //const logPath = path.join(process.cwd(), 'logs.txt');
     //fs.appendFileSync(logPath, log + '\n', 'utf8');
 
