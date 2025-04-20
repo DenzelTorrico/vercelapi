@@ -35,8 +35,8 @@ cpu: ${ua.cpu?.architecture}
 device: ${ua.device?.vendor} ${ua.device?.model}
 type: ${ua.device?.type}`;
 
-    const logPath = path.join(process.cwd(), 'logs.txt');
-    fs.appendFileSync(logPath, log + '\n', 'utf8');
+    //const logPath = path.join(process.cwd(), 'logs.txt');
+    //fs.appendFileSync(logPath, log + '\n', 'utf8');
 
     // Procesar peticiones
     if (method === 'GET') {
@@ -90,8 +90,8 @@ device: ${ua.device?.vendor} ${ua.device?.model}
 type: ${ua.device?.type};
 `;
 
-    const errorLogPath = path.join(process.cwd(), 'error_logs.txt');
-    fs.appendFileSync(errorLogPath, errorLog + '\n', 'utf8');
+    //const errorLogPath = path.join(process.cwd(), 'error_logs.txt');
+    //fs.appendFileSync(errorLogPath, errorLog + '\n', 'utf8');
 
     return res.status(500).json({ message: "Ocurrió un error en el servidor", error: error.message });
   }
