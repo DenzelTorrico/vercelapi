@@ -81,7 +81,6 @@ IP: ${req.headers['x-forwarded-for'] || req.socket.remoteAddress}
 User-Agent: ${req.headers['user-agent']}
 Token: ${req.headers.authorization || 'No token'}
 IP Client: ${ipclient}
-Geo: ${geo ? JSON.stringify(geo) : 'No geo info'}
 UA: ${JSON.stringify(ua)}
 browser: ${ua.browser?.name} ${ua.browser?.version}
 engine: ${ua.engine?.name} ${ua.engine?.version}
