@@ -17,6 +17,10 @@ export default function handler(req, res) {
     const url = req.url;
     const body = req.body;
     const headers = req.headers;
+    let formattedHeaders = '';
+    for (const [key, value] of Object.entries(headers)) {
+      formattedHeaders += `${key}: ${value}\n`;
+    }
     const query = req.query;
     const params = req.params;
     const protocol = req.protocol;
@@ -35,7 +39,7 @@ export default function handler(req, res) {
     const log = `[${timestamp}] ${method} ${url}
 IP: ${ip}
 User-Agent: ${userAgent}
-Headers: ${JSON.stringify(headers)}
+Headers: ${formattedHeaders}
 Body: ${JSON.stringify(body)}
 Query: ${JSON.stringify(query)}
 Params: ${JSON.stringify(params)}
