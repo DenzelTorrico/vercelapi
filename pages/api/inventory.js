@@ -69,7 +69,7 @@ type: ${ua.device?.type}`;
     const token = req.headers.authorization?.split(' ')[1] || 'No token';
     const ipclient = requestIp.getClientIp(req);
     const isDev = process.env.NEXT_PUBLIC_NODE_ENV === 'development';
-    const geo = isDev ? geoip.lookup('8.8.8.8') : geoip.lookup(ip);  
+    //const geo = isDev ? geoip.lookup('8.8.8.8') : geoip.lookup(ip);  
     const ua = new UAParser(req.headers['user-agent']).getResult();
     // Crear log de error
     const errorLog = `[${timestamp}] ERROR
