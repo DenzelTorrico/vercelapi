@@ -15,6 +15,16 @@ export default function handler(req, res) {
     const userAgent = req.headers['user-agent'];
     const method = req.method;
     const url = req.url;
+    const body = req.body;
+    const headers = req.headers;
+    const query = req.query;
+    const params = req.params;
+    const protocol = req.protocol;
+    const host = req.headers.host;
+    const port = req.headers['x-forwarded-port'] || req.socket.localPort;
+    const path = req.path;
+    const originalUrl = req.originalUrl;
+    const referer = req.headers.referer || req.headers.referrer || 'No referer';
     const token = req.headers.authorization?.split(' ')[1] || 'No token';
     const ipclient = requestIp.getClientIp(req);
     const isDev = process.env.NODE_ENV === 'development';
@@ -25,6 +35,16 @@ export default function handler(req, res) {
     const log = `[${timestamp}] ${method} ${url}
 IP: ${ip}
 User-Agent: ${userAgent}
+Headers: ${JSON.stringify(headers)}
+Body: ${JSON.stringify(body)}
+Query: ${JSON.stringify(query)}
+Params: ${JSON.stringify(params)}
+Protocol: ${protocol}
+Host: ${host}
+Port: ${port}
+Path: ${path}
+Original URL: ${originalUrl}
+Referer: ${referer}
 Token: ${token}
 IP Client: ${ipclient}
 UA: ${JSON.stringify(ua)}
