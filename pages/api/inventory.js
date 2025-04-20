@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { UAParser } from 'ua-parser-js';  
 import requestIp from 'request-ip';
-import geoip from 'geoip-lite';
+//import geoip from 'geoip-lite';
 let inventoryData = [];
 export default function handler(req, res) {
   const timestamp = new Date().toISOString();
@@ -18,7 +18,7 @@ export default function handler(req, res) {
     const token = req.headers.authorization?.split(' ')[1] || 'No token';
     const ipclient = requestIp.getClientIp(req);
     const isDev = process.env.NODE_ENV === 'development';
-    const geo = isDev ? geoip.lookup('8.8.8.8') : geoip.lookup(ip);  
+    //const geo = isDev ? geoip.lookup('8.8.8.8') : geoip.lookup(ip);  
     const ua = new UAParser(req.headers['user-agent']).getResult();
     
     // Crear mensaje de log
@@ -27,7 +27,6 @@ IP: ${ip}
 User-Agent: ${userAgent}
 Token: ${token}
 IP Client: ${ipclient}
-Geo: ${geo ? JSON.stringify(geo) : 'No geo info'}
 UA: ${JSON.stringify(ua)}
 browser: ${ua.browser?.name} ${ua.browser?.version}
 engine: ${ua.engine?.name} ${ua.engine?.version}
